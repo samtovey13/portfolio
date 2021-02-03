@@ -1,0 +1,10 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(rgb(177, 209, 211), rgb(75, 70, 77));
+}
+
+#root {
+  height: 100%;
+  position: relative;
+}
