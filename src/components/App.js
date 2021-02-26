@@ -1,10 +1,20 @@
 import "../styles/App.css";
+import Navbar from "./Navbar";
+import About from "./About";
+import Skills from "./Skills";
+import Projects from "./Projects";
+import Contact from "./Contact";
 
 function App() {
   return (
     <div className="app">
-      <h1>Sam Tovey | Developer</h1>
-      <p>Site in progress. Please check back again soon.</p>
+      <Navbar />
+      <main>
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
     </div>
   );
 }
