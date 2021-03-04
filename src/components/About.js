@@ -1,45 +1,37 @@
 import React from "react";
-import '../styles/About.css';
+import { StyledList } from '../styled/List';
+import StyledPanel from "../styled/Panel";
 
 const About = () => {
   return (
-    <div className="about">
+    <StyledPanel className="about">
       <h2>My Story</h2>
+      <p>Hello. I'm Sam and I'm a Web Developer based in Edinburgh, UK.</p>
       <p>
-        Flashback to the 90s, land of animated Powerpoints and rainbow-coloured
-        WordArt. I built my first ever website for a school project. My baffled
-        primary school teacher had never seen an HTML file before and tried to
-        open it in Powerpoint, much to the amusement of my parents who were
-        eventually called in to assist.
+        In 2020 I decided to turn my hobby into a career and enrolled on a part
+        time bootcamp with Manchester Codes. In the past year I've packed a lot
+        of learning into my evenings and weekends, and I am now seeking a junior
+        role in a supportive company where I can continue learning from some of
+        the best professionals in the industry.
       </p>
-      <p>
-        Fast forward to Lockdown 2020, and an unexpected period of downtime gave
-        me the chance to turn my hobby into a career.
-      </p>
-      <p>
-        After countless evenings and weekends spent coding I am proud to have
-        graduated from the Manchester Codes part time bootcamp.
-      </p>
-      <p>
-        As a career-switcher I bring a lot more to coding than simply technical
-        skills:
-      </p>
-      <ul className="ul-no-bullets">
+      <p></p>
+      <h3>Things I enjoy:</h3>
+      <StyledList>
         <li>
-          <strong>Customer service pro</strong> =&gt; I understand the
-          importance of looking after the client and working to a brief.
+          <span>Efficiency. </span>I get huge satisfaction from streamlining and
+          simplifying procedures, helping others to achieve more with fewer
+          resources.
         </li>
         <li>
-          <strong>Experienced Retail Manager</strong> =&gt; I've spent many
-          years playing with databases to make life easier through automation
-          and efficiency.
+          <span>A good challenge. </span>Preferably accompanied by a strong coffee 
+          and someone to bounce ideas off.
         </li>
         <li>
-          <strong>Background in the visual arts</strong> =&gt; I can spot a well-styled website a
-          mile off.
+          <span>Learning on the job. </span>I learn by doing, and I'm always on the lookout
+          for a new favourite tool to make life easier (right now it's Styled Components!)
         </li>
-      </ul>
-    </div>
+      </StyledList>
+    </StyledPanel>
   );
 };
 
