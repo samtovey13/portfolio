@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const ProjectCard = styled.div`
+const StyledProjectCard = styled.div`
   display: flex;
   justify-content: flex-start;
   flex-flow: column nowrap;
@@ -45,4 +45,4 @@ const ProjectCard = styled.div`
   }
 `;
 
-export default ProjectCard;
+export default StyledProjectCard;
