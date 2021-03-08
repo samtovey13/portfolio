@@ -7,6 +7,7 @@ import nasaImg from "../images/nasa/screenshot-sq.png";
 import musicLibImg from "../images/music-library/screenshot-sq.png";
 import bookLibImg from "../images/book-library/screenshot-sq.png";
 import cruiseShipsImg from "../images/cruise-ships/screenshot-sq.png";
+import StyledPanel from "../styled/Panel";
 
 const projects = [
   {
@@ -61,7 +62,7 @@ const ProjectCard = ({props}) => {
 
 const Projects = () => {
   return (
-    <div className="projects">
+    <StyledPanel className="projects">
       <h2>Projects</h2>
       <ProjectGrid className="projects-grid">
         {
@@ -74,7 +75,7 @@ const Projects = () => {
           })
         }
       </ProjectGrid>
-    </div>
+    </StyledPanel>
   );
 };
 

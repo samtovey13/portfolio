@@ -1,14 +1,29 @@
 import React from 'react';
+import StyledContactForm from '../styled/ContactForm';
+import StyledPanel from '../styled/Panel';
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <StyledPanel className="contact">
       <h2>Contact</h2>
-      <form>
-        <p>Contact form here</p>
-      </form>
-    </div>
-  )
+      <StyledContactForm
+        name="contact-form"
+      >
+        <label for="name">Name</label>
+        <input type="text" name="name"></input>
+
+        <label for="email">Email</label>
+        <input type="email" name="email"></input>
+
+        <label for="message">Message</label>
+        <textarea name="message" width="100%" rows="10"></textarea>
+
+        <button type="submit" className="contact-submit-button">
+          Send
+        </button>
+      </StyledContactForm>
+    </StyledPanel>
+  );
 }
 
 export default Contact;
