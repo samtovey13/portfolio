@@ -11,6 +11,7 @@ const StyledContactForm = styled.form`
   textarea,
   button {
     font-size: 20px;
+    border: none;
   }
 
   label {
@@ -23,11 +24,20 @@ const StyledContactForm = styled.form`
     margin-bottom: 20px;
     padding: 4px;
     border-radius: 0;
+    &:focus {
+      outline-color: #DD6E42;
+    }
   }
 
   button {
     align-self: center;
-    width: 100px;
+    width: 200px;
+    background-color: #DD6E42;
+    border-radius: 30px;
+    padding: 20px;
+    color: #FFFFFF;
+    font-weight: 800;
+    margin-top: 20px;
   }
 `;
 

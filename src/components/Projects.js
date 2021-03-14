@@ -62,19 +62,19 @@ const ProjectCard = ({props}) => {
 
 const Projects = () => {
   return (
-    <StyledPanel className="projects">
-      <h2>Projects</h2>
-      <ProjectGrid className="projects-grid">
-        {
-          projects.map(project => {
+    <StyledPanel className="projects" bg="#EAEAEA">
+      <div className="panel-inner">
+        <h2>Projects</h2>
+        <ProjectGrid className="projects-grid">
+          {projects.map((project) => {
             return (
               <StyledProjectCard>
                 <ProjectCard props={project} />
               </StyledProjectCard>
             );
-          })
-        }
-      </ProjectGrid>
+          })}
+        </ProjectGrid>
+      </div>
     </StyledPanel>
   );
 };

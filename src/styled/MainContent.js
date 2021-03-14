@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 const StyledMain = styled.main`
-  max-width: 900px;
-  margin: auto;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 `;
 
 export default StyledMain;

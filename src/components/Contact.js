@@ -39,49 +39,47 @@ const Contact = () => {
   }
 
   return (
-    <StyledPanel className="contact">
-      <h2>Contact</h2>
-      <div className="alert">
-        {
-          success && <p className="success-message">Success! Message sent.</p>
-        }
-        {
-          fail && <p className="fail-message">Error! Message not sent.</p>
-        }
+    <StyledPanel className="contact" bg="#E8DAB2">
+      <div className="panel-inner">
+        <h2>Contact</h2>
+        <div className="alert">
+          {success && <p className="success-message">Success! Message sent.</p>}
+          {fail && <p className="fail-message">Error! Message not sent.</p>}
+        </div>
+        <StyledContactForm name="contact-form" onSubmit={handleSubmit}>
+          <label htmlFor="name">Name</label>
+          <input
+            required
+            type="text"
+            name="name"
+            value={fields.name}
+            onChange={handleChange}
+          ></input>
+
+          <label htmlFor="email">Email</label>
+          <input
+            required
+            type="email"
+            name="email"
+            value={fields.email}
+            onChange={handleChange}
+          ></input>
+
+          <label htmlFor="message">Message</label>
+          <textarea
+            required
+            name="message"
+            width="100%"
+            rows="10"
+            value={fields.message}
+            onChange={handleChange}
+          ></textarea>
+
+          <button type="submit" className="contact-submit-button">
+            Send
+          </button>
+        </StyledContactForm>
       </div>
-      <StyledContactForm name="contact-form" onSubmit={handleSubmit}>
-        <label htmlFor="name">Name</label>
-        <input
-          required
-          type="text"
-          name="name"
-          value={fields.name}
-          onChange={handleChange}
-        ></input>
-
-        <label htmlFor="email">Email</label>
-        <input
-          required
-          type="email"
-          name="email"
-          value={fields.email}
-          onChange={handleChange}
-        ></input>
-
-        <label htmlFor="message">Message</label>
-        <textarea
-          required
-          name="message"
-          width="100%"
-          rows="10"
-          value={fields.message}
-          onChange={handleChange}
-        ></textarea>
-
-        <button type="submit" className="contact-submit-button">
-          Send
-        </button>
-      </StyledContactForm>
     </StyledPanel>
   );
 }
