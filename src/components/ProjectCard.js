@@ -5,7 +5,6 @@ const ProjectCard = ({ props }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const showModal = () => {
-    console.log("inside showModal");
     setIsOpen(true);
     document.body.style.top = `-${window.scrollY}px`;
     document.body.style.position = "fixed";
@@ -13,7 +12,6 @@ const ProjectCard = ({ props }) => {
 
   const hideModal = (event) => {
     event.preventDefault();
-    console.log("hide");
     setIsOpen(false);
     const scrollY = document.body.style.top;
     document.body.style.position = "";
@@ -42,12 +40,13 @@ const ProjectCard = ({ props }) => {
           <p>{props.summary}</p>
         </div>
       </div>
-      <Modal
-        props={props}
-        hideModal={hideModal}
-        isOpen={isOpen}
-        setIsOpen={setIsOpen}
-      />
+      { 
+        isOpen && <Modal
+          props={props}
+          hideModal={hideModal}
+          isOpen={isOpen}
+        /> 
+      }
     </>
   );
 };
