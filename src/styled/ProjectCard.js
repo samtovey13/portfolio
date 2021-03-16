@@ -1,13 +1,18 @@
 import styled from "styled-components";
 
 const StyledProjectCard = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  flex-flow: column nowrap;
+  height: 100%;
   width: 100%;
-  box-sizing: border-box;
-  box-shadow: 2px 4px 6px 2px #888888;
-  position: relative;
+
+  .project-card {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column nowrap;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 2px 4px 6px 2px #888888;
+    position: relative;
+  }
 
   img {
     max-width: 100%;
@@ -20,6 +25,7 @@ const StyledProjectCard = styled.div`
   .img-wrapper {
     position: relative;
     box-sizing: border-box;
+    z-index: 0;
 
     &:after {
       content: "";
@@ -32,7 +38,6 @@ const StyledProjectCard = styled.div`
         rgba(255, 255, 255, 0.4),
         rgba(0, 0, 0, 1)
       );
-      z-index: 100;
     }
   }
 
