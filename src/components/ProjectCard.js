@@ -29,7 +29,7 @@ const ProjectCard = ({ props }) => {
       >
         <div className="img-wrapper">
           <img
-            src={props.image}
+            src={props.images.square}
             alt={props.header + " screenshot"}
             width="100%"
           />
