@@ -18,12 +18,26 @@ const StyledModal = styled.div`
   .modal-container {
     display: block;
     position: relative;
-    padding: 20px;
     margin: 10px;
-    height: calc(96% - 20px);
+    height: calc(100% - 20px);
     background-color: #ffffff;
     border-radius: 8px;
     z-index: 101;
+
+    .modal-header {
+      width: 100%;
+      height: 40px;
+    }
+
+    .x-button {
+      border: none;
+      background-color: inherit;
+      display: block;
+      float: right;
+      margin: 16px;
+      font-size: 24px;
+      color: grey;
+    }
   }
 `;
 
