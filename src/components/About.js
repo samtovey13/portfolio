@@ -1,6 +1,6 @@
 import React from "react";
 import { StyledList } from '../styled/List';
-import StyledPanel from "../styled/Panel";
+import {StyledPanel} from "../styled/Panel";
 
 const About = () => {
   return (
@@ -8,7 +8,7 @@ const About = () => {
       <StyledPanel className="about" bg="#DD6E42" col="#FFFFFF">
         <div className="panel-inner">
           <h2>My Story</h2>
-          <p>Hello. I'm Sam and I'm a Web Developer based in Edinburgh, UK.</p>
+          <p className="first-p">Hello. I'm Sam and I'm a Web Developer based in Edinburgh, UK.</p>
           <p>
             In 2020 I decided to turn my hobby into a career and enrolled on a
             part time bootcamp with Manchester Codes. In the past year I've

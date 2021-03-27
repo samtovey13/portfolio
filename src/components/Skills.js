@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyledFlexContainerHorizontal } from '../styled/FlexContainers';
 import { StyledList } from "../styled/List";
-import StyledPanel from '../styled/Panel';
+import {StyledPanel} from '../styled/Panel';
 import styled from 'styled-components';
 
 const SkillsWrapper = styled.div`

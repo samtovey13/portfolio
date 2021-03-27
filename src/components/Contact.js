@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import StyledContactForm from '../styled/ContactForm';
-import StyledPanel from '../styled/Panel';
+import {StyledPanel} from '../styled/Panel';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {

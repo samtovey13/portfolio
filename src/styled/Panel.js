@@ -5,7 +5,7 @@ const StyledPanel = styled.div`
   padding: 60px 0;
   background-color: ${(props) => props.bg};
   display: grid;
-  grid-template-columns: 1fr minmax(auto, 900px) 1fr;
+  grid-template-columns: 1fr minmax(150px, 900px) 1fr;
   height: calc(100% - 180px);
   overflow-y: auto;
   -ms-overflow-style: none; /* IE and Edge */
@@ -20,6 +20,46 @@ const StyledPanel = styled.div`
     margin: 0;
     padding: 40px;
   }
+
+  .first-p {
+    font-weight: 800;
+    font-size: 18px;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
 `;
 
-export default StyledPanel;
+const StyledModalPanel = styled(StyledPanel)`
+  padding: 0;
+  height: auto;
+  width: 100%;
+  .panel-inner {
+    padding: 20px;
+  }
+  img {
+    border: 1px solid grey;
+    border-radius: 20px;
+    display: block;
+    margin: 40px auto;
+    max-width: 100%;
+  }
+  h1 {
+    margin: 0;
+  }
+  h2 {
+    margin: 40px 0 10px 0;
+    font-size: 22px;
+  }
+  .project-direct-links {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    * {
+      flex: 0 0 100px;
+      border: 1px solid red;
+    }
+  }
+`;
+
+export {StyledPanel, StyledModalPanel} ;

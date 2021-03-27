@@ -2,7 +2,7 @@ import React from "react";
 import ProjectCard from './ProjectCard';
 import StyledProjectCard from "../styled/ProjectCard";
 import { ProjectGrid } from "../styled/GridWrappers";
-import StyledPanel from "../styled/Panel";
+import {StyledPanel} from "../styled/Panel";
 
 import projects from "../static/projects";
 

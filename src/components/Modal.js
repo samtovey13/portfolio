@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import StyledModal from "../styled/Modal";
-import StyledPanel from "../styled/Panel";
+import { StyledModalPanel } from "../styled/Panel";
 
 
 const Modal = ({ props, hideModal, isOpen }) => {
@@ -22,23 +22,61 @@ const Modal = ({ props, hideModal, isOpen }) => {
   return (
     <StyledModal id="modal" onKeyUp={handleKeyUp} tabIndex={-1}>
       <div className="modal-overlay">
-        <div className="modal-container">
-          <div className="modal-header">
-            <button className="x-button" onClick={hideModal}>
-              X
-            </button>
-          </div>
+        <div className="modal-wrapper">
+          <div className="modal-container">
+            <div className="modal-header">
+              <button className="x-button" onClick={hideModal}>
+                X
+              </button>
+            </div>
 
-          <StyledPanel>
-            <div className="panel-inner">
-              <h1>{props.header}</h1>
-              <p>{props.summary}</p>
-              <img src={props.images.gif1} alt="some alt text" width="500px" />
+            <StyledModalPanel className="modal-panel">
+              <div className="panel-inner">
+                <h1>{props.header}</h1>
+                <p className="first-p">{props.summary}</p>
+
+                <div className="project-direct-links">
+                  {props.links.liveSite ? (
+                    <a className="live-site-button" href={props.links.liveSite}>
+                      Live Site
+                    </a>
+                  ) : null }
+                  {props.links.gitRepo ? (
+                    <a className="git-repo-button" href={props.links.gitRepo}>
+                      Git Repo
+                    </a>
+                  ) : null }
+                </div>
+
+                <h2>The Brief</h2>
+                <p>{props.brief}</p>
+
+                <h2>Tech</h2>
+                <p>{props.tech}</p>
+
+                <h2>Justification</h2>
+                <p>{props.justification}</p>
+
+                <img
+                  src={props.images.gif1}
+                  alt="some alt text"
+                  width="500px"
+                />
+
+                <h2>Challenges</h2>
+                <p>{props.challenges}</p>
+
+                <h2>Reflection</h2>
+                <p>{props.reflection}</p>
+              </div>
+            </StyledModalPanel>
+
+            <div className="modal-footer">
               <button className="hide-button" onClick={hideModal}>
                 Hide
               </button>
             </div>
-          </StyledPanel>
+          </div>
         </div>
       </div>
     </StyledModal>
