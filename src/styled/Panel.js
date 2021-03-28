@@ -43,6 +43,11 @@ const StyledModalPanel = styled(StyledPanel)`
     margin: 40px auto;
     max-width: 100%;
   }
+
+  .modal-panel-header {
+    text-align: center;
+  }
+
   h1 {
     margin: 0;
   }
@@ -53,11 +58,38 @@ const StyledModalPanel = styled(StyledPanel)`
   .project-direct-links {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: stretch;
-    * {
-      flex: 0 0 100px;
-      border: 1px solid red;
+    gap: 40px;
+    margin: 60px 0;
+  }
+
+  .live-site-button,
+  .git-repo-button {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+    background-color: grey;
+    border-radius: 20px;
+    border: 2px solid white;
+    text-decoration: none;
+    box-shadow: 2px 3px 5px 6px #ccc;
+    text-align: center;
+
+    &:hover {
+      background-color: #dd6e42;
+    }
+
+    svg {
+      width: 60px;
+      height: 60px;
+      margin-right: 20px;
     }
   }
 `;

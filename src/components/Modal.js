@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import StyledModal from "../styled/Modal";
 import { StyledModalPanel } from "../styled/Panel";
-
+import { FaGithub } from 'react-icons/fa';
+import { GiMouse } from 'react-icons/gi';
 
 const Modal = ({ props, hideModal, isOpen }) => {
 
@@ -32,20 +33,24 @@ const Modal = ({ props, hideModal, isOpen }) => {
 
             <StyledModalPanel className="modal-panel">
               <div className="panel-inner">
-                <h1>{props.header}</h1>
-                <p className="first-p">{props.summary}</p>
+                <div className="modal-panel-header">
+                  <h1>{props.header}</h1>
+                  <p className="first-p">{props.summary}</p>
+                </div>
 
                 <div className="project-direct-links">
                   {props.links.liveSite ? (
                     <a className="live-site-button" href={props.links.liveSite}>
+                      <GiMouse />
                       Live Site
                     </a>
-                  ) : null }
+                  ) : null}
                   {props.links.gitRepo ? (
                     <a className="git-repo-button" href={props.links.gitRepo}>
+                      <FaGithub />
                       Git Repo
                     </a>
-                  ) : null }
+                  ) : null}
                 </div>
 
                 <h2>The Brief</h2>
