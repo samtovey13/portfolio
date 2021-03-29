@@ -12,7 +12,7 @@ const StyledProjectCard = styled.div`
   background-color: white;
   border-radius: 20px;
 
-  img {
+  .card-img {
     max-width: 100%;
     height: auto;
     margin: 0;
@@ -21,7 +21,7 @@ const StyledProjectCard = styled.div`
     border-radius: 20px 20px 0 0;
   }
 
-  .img-wrapper {
+  .card-img-wrapper {
     position: relative;
     box-sizing: border-box;
     z-index: 0;

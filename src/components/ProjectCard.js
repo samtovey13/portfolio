@@ -27,8 +27,9 @@ const ProjectCard = ({ props }) => {
           showModal(e);
         }}
       >
-        <div className="img-wrapper">
+        <div className="card-img-wrapper">
           <img
+            className="card-img"
             src={props.images.square}
             alt={props.header + " screenshot"}
             width="100%"
