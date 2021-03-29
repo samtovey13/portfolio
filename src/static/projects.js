@@ -53,8 +53,26 @@ const projects = [
         client-side routing.
       </>
     ),
-    challenges: <></>,
-    review: <></>,
+    challenges: (
+      <>
+        Initially I had problems with testing as my app became more complex. To
+        resolve this I refactored my code and shifted my onClick and onChange
+        functions up a level to pass them down to the component as a prop
+        instead. Isolating parts of the functional code in this way allowed me
+        to use Jest mocks and test the code at a lower level.
+      </>
+    ),
+    review: (
+      <>
+        With more time I would add functionality to the 'add property' form to
+        allow the user to upload an image when creating a new property. I would
+        also replicate the filters/sort options of the main property listings
+        page onto the favourites page.
+        <br />I would also build on the SSO feature by giving the user
+        alternative login methods, eg login with Google or Github, or by adding
+        my own custom OAuth.
+      </>
+    ),
   },
   {
     ref: "Weather",
@@ -65,14 +83,47 @@ const projects = [
       gif1: weatherLocationGif,
     },
     links: {
-      liveSite: "",
-      gitRepo: "",
+      liveSite: "https://samtovey13.github.io/weather-app",
+      gitRepo: "https://github.com/samtovey13/weather-app",
     },
-    brief: <></>,
-    tech: <></>,
-    justification: <></>,
-    challenges: <></>,
-    review: <></>,
+    brief: (
+      <>
+        Build a weather app that receives live weather data. Users should be able to:
+        <li>Select a location</li>
+        <li>See a summary of each of the weather for a 5-day forecast</li>
+        <li>Click on one of the summaries to view full forecast details.</li>
+      </>
+    ),
+    tech: <>React Hooks, Jest, PropTypes, Axios, CSS</>,
+    justification: (
+      <> 
+        The app was built as a Single Page Application with React. Using React keeps the app light
+        and fast, as forecast data can be updated without reloading the whole page. It also meant that
+        components such as the forecast summary cards could be reused.
+      </>
+    ),
+    challenges: (
+      <>
+        All parts of the forecast and location display rely on data from the API
+        call made automatically when the app is first opened. This initially resulted in a very juddery loading
+        experience as each component spluttered into view.
+        To smooth the visual transition I implemented conditional rendering so that a 
+        'loading' graphic was displayed while the API request was in progress, and the
+        whole app rendered as one when the data was ready to display.
+        This gave a more professional, polished feel.
+      </>
+    ),
+    review: (
+      <>
+        The app currently receives quite limited data from a slimmed-down version
+        of the Open Weather Map API - eg it can only search for cities within the UK. I would
+        like to connect it directly to the Open Weather Map instead in order to receive
+        a wider range of data.
+        <br/>
+        I also want to build an autocorrecting search bar to make it easier for users to find
+        a location.
+      </>
+    ),
   },
   {
     ref: "NASA",

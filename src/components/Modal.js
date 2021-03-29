@@ -72,7 +72,7 @@ const Modal = ({ props, hideModal, isOpen }) => {
                 <p>{props.challenges}</p>
 
                 <h2>Reflection</h2>
-                <p>{props.reflection}</p>
+                <p>{props.review}</p>
               </div>
             </StyledModalPanel>
 
