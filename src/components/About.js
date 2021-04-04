@@ -1,6 +1,9 @@
 import React from "react";
+import StyledAnchor from "../styled/Anchor";
 import { StyledList } from '../styled/List';
 import {StyledPanel} from "../styled/Panel";
+import { FiArrowDown } from "react-icons/fi";
+
 
 const About = () => {
   return (
@@ -16,7 +19,9 @@ const About = () => {
             seeking a junior role in a supportive company where I can continue
             learning from some of the best professionals in the industry.
           </p>
-          <p></p>
+          <StyledAnchor href="#projects">Skip to Projects
+          <FiArrowDown />
+          </StyledAnchor>
         </div>
       </StyledPanel>
       <StyledPanel>

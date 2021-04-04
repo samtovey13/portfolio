@@ -71,7 +71,7 @@ const Modal = ({ props, hideModal, isOpen }) => {
 
                 <img
                   src={props.images.gif1}
-                  alt="some alt text"
+                  alt="GIF showing project in action"
                   width="500px"
                 />
 

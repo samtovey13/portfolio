@@ -8,7 +8,7 @@ import projects from "../static/projects";
 
 const Projects = () => {
   return (
-    <StyledPanel className="projects" bg="#EAEAEA">
+    <StyledPanel className="projects" id="projects" bg="#EAEAEA">
       <div className="panel-inner">
         <h2>Projects</h2>
         <ProjectGrid className="projects-grid">
