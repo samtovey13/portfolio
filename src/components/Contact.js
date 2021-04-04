@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import StyledContactForm from '../styled/ContactForm';
 import {StyledPanel} from '../styled/Panel';
 import emailjs from 'emailjs-com';
+import StyledButton from "../styled/Button";
 
 const Contact = () => {
   
@@ -75,9 +76,9 @@ const Contact = () => {
             onChange={handleChange}
           ></textarea>
 
-          <button type="submit" className="contact-submit-button">
+          <StyledButton type="submit" className="contact-submit-button">
             Send
-          </button>
+          </StyledButton>
         </StyledContactForm>
       </div>
     </StyledPanel>

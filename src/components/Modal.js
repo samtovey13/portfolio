@@ -3,6 +3,7 @@ import StyledModal from "../styled/Modal";
 import { StyledModalPanel } from "../styled/Panel";
 import { FaGithub } from 'react-icons/fa';
 import { GiMouse } from 'react-icons/gi';
+import StyledButton from "../styled/Button";
 
 const Modal = ({ props, hideModal, isOpen }) => {
 
@@ -40,16 +41,16 @@ const Modal = ({ props, hideModal, isOpen }) => {
 
                 <div className="project-direct-links">
                   {props.links.liveSite ? (
-                    <a className="live-site-button" href={props.links.liveSite}>
+                    <StyledButton className="live-site-button" href={props.links.liveSite}>
                       <GiMouse />
                       Live Site
-                    </a>
+                    </StyledButton>
                   ) : null}
                   {props.links.gitRepo ? (
-                    <a className="git-repo-button" href={props.links.gitRepo}>
+                    <StyledButton className="git-repo-button" href={props.links.gitRepo}>
                       <FaGithub />
                       Git Repo
-                    </a>
+                    </StyledButton>
                   ) : null}
                 </div>
 
@@ -77,9 +78,9 @@ const Modal = ({ props, hideModal, isOpen }) => {
             </StyledModalPanel>
 
             <div className="modal-footer">
-              <button className="hide-button" onClick={hideModal}>
+              <StyledButton className="hide-button" onClick={hideModal}>
                 Hide
-              </button>
+              </StyledButton>
             </div>
           </div>
         </div>

@@ -41,13 +41,16 @@ const StyledModal = styled.div`
     }
 
     .x-button {
-      border: none;
+      border: 2px solid lightgrey;
+      border-radius: 8px;
       background-color: inherit;
       display: block;
       float: right;
-      margin: 16px;
+      margin: 5px;
+      padding: 5px 10px 2px 10px;
       font-size: 24px;
       color: grey;
+      cursor: pointer;
     }
     .hide-button {
       display: block;

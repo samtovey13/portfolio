@@ -62,33 +62,10 @@ const StyledModalPanel = styled(StyledPanel)`
     align-items: stretch;
     gap: 40px;
     margin: 60px 0;
-  }
-
-  .live-site-button,
-  .git-repo-button {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    padding: 20px;
-    font-size: 24px;
-    font-weight: 800;
-    color: white;
-    background-color: grey;
-    border-radius: 20px;
-    border: 2px solid white;
-    text-decoration: none;
-    box-shadow: 2px 3px 5px 6px #ccc;
-    text-align: center;
-
-    &:hover {
-      background-color: #dd6e42;
-    }
 
     svg {
-      width: 60px;
-      height: 60px;
+      width: 40px;
+      height: 40px;
       margin-right: 20px;
     }
   }

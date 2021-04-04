@@ -8,8 +8,7 @@ const StyledContactForm = styled.form`
 
   input,
   label,
-  textarea,
-  button {
+  textarea {
     font-size: 20px;
     border: none;
   }
@@ -29,14 +28,8 @@ const StyledContactForm = styled.form`
     }
   }
 
-  button {
+  .contact-submit-button {
     align-self: center;
-    width: 200px;
-    background-color: #DD6E42;
-    border-radius: 30px;
-    padding: 20px;
-    color: #FFFFFF;
-    font-weight: 800;
     margin-top: 20px;
   }
 `;
