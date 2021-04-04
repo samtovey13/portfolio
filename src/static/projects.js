@@ -187,11 +187,50 @@ const projects = [
       liveSite: "https://music-library-api-demo.herokuapp.com",
       gitRepo: "https://github.com/samtovey13/music-library-api",
     },
-    brief: <></>,
-    tech: <></>,
-    justification: <></>,
-    challenges: <></>,
-    review: <></>,
+    brief: (
+      <>
+        Build a music library API that will store information about artists,
+        albums and songs. It should implement a CRUD REST API to interact with a
+        MySQL database.
+      </>
+    ),
+    tech: (
+      <>
+        MySQL, Sequelize, Express, Docker, Dotenv, Nodemon, Mocha, Chai,
+        Supertest
+      </>
+    ),
+    justification: (
+      <>
+        I used Express which made it easier to process the API data in JSON
+        format.
+        <br />
+        Dotenv allowed me to easily switch between different environment
+        variables as needed, to enable me to connect to my local database while
+        building the app and then connect to the production database when ready
+        to deploy.
+        <br />
+        Using Mocha ensured that tests were run synchronously for this app,
+        while the assertion library from Chai provided more options for checking
+        the behaviour of the app in testing.
+      </>
+    ),
+    challenges: (
+      <>
+        This project was my first using Docker. I initially ran into many
+        technical problems with installation (due to attempting to install
+        Docker within my Linux installation which was itself a container within
+        my ChromeOS!)... in the end this actually improved my understanding of
+        how Docker operates and the role of containers in other aspects of my
+        tech usage.
+      </>
+    ),
+    review: (
+      <>
+        The API could be made more complex by adding futher database tables, for
+        example Genre, to create different associations between the data.
+      </>
+    ),
   },
   // Book Library
   {
@@ -203,13 +242,67 @@ const projects = [
     },
     links: {
       liveSite: "",
-      gitRepo: "",
+      gitRepo: "https://github.com/samtovey13/book-library-api",
     },
-    brief: <></>,
-    tech: <></>,
-    justification: <></>,
-    challenges: <></>,
-    review: <></>,
+    brief: (
+      <>
+        Build a music library API that will store information about books,
+        genres and readers. It should implement a CRUD REST API to interact with
+        a MySQL database.
+        <li>All book items must have at least a title and an author</li>
+        <li>Users should be able to search for books by genre</li>
+        <li>The reader must sign up with a valid email and password</li>
+        <li>
+          For security, the reader's password should not be returned from the
+          API
+        </li>
+      </>
+    ),
+    tech: (
+      <>
+        MySQL, Sequelize, Express, Docker, Dotenv, Nodemon, Mocha, Chai,
+        Supertest
+      </>
+    ),
+    justification: (
+      <>
+        I implemented Sequelize validation methods to check the validity of data
+        before it is handled by the API. This helps to prevent malicious users
+        sending dangerous input to the server.
+        <br />
+        I used Express which made it easier to process the API data in JSON
+        format.
+        <br />
+        Dotenv allowed me to easily switch between different environment
+        variables as needed, to enable me to connect to my local database while
+        building the app and then connect to the production database when ready
+        to deploy.
+        <br />
+        Using Mocha ensured that tests were run synchronously for this app,
+        while the assertion library from Chai provided more options for checking
+        the behaviour of the app in testing.
+      </>
+    ),
+    challenges: (
+      <>
+        This project required advance Sequelize schema validation which required
+        a high attention to detail to implement.
+        <br />
+        There were also complex relationships between database tables to work
+        through and it was a challenge to construct the all associations in the
+        right directions.
+      </>
+    ),
+    review: (
+      <>
+        With more time I would improve the error handling and validation methods
+        of this app, for example to prevent duplicate records being created.
+        <br />
+        I made use of a 'helper' file to refactor my code in the controllers,
+        to improve reusability and make the code DRY. This same 'helper' setup could be 
+        replicated in the test files to improve efficiency.
+      </>
+    ),
   },
   // Cruise Ships
   {
