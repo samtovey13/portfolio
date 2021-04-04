@@ -297,10 +297,10 @@ const projects = [
       <>
         With more time I would improve the error handling and validation methods
         of this app, for example to prevent duplicate records being created.
-        <br />
-        I made use of a 'helper' file to refactor my code in the controllers,
-        to improve reusability and make the code DRY. This same 'helper' setup could be 
-        replicated in the test files to improve efficiency.
+        <br />I made use of a 'helper' file to refactor my code in the
+        controllers, to improve reusability and make the code DRY. This same
+        'helper' setup could be replicated in the test files to improve
+        efficiency.
       </>
     ),
   },
@@ -314,14 +314,49 @@ const projects = [
       gif1: cruiseShipsGif,
     },
     links: {
-      liveSite: "",
-      gitRepo: "",
+      liveSite: "https://samtovey13.github.io/cruise-ships",
+      gitRepo: "https://github.com/samtovey13/cruise-ships",
     },
-    brief: <></>,
-    tech: <></>,
-    justification: <></>,
-    challenges: <></>,
-    review: <></>,
+    brief: (
+      <>
+        Build an app for a cruise ship captain to track the voyage of a ship. 
+        The ship should be able to set sail and dock at all ports on the specified route.
+        The user should be able to create their own itinerary for the ship to follow.
+      </>
+    ),
+    tech: <>JavaScript, HTML, CSS</>,
+    justification: (
+      <>
+        This project used Vanilla JavaScript with the aim to become familiar
+        with the principles of Object-Oriented Programming.
+        <br/>
+        Jest mocks and spies were used to emulate dependencies in tests and to track the 
+        call history of other functions.
+        <br/>
+        A simple UI was built with HTML and CSS to enable users to select an intinerary
+        and to visualise the progress of the ship on its journey.
+      </>
+    ),
+    challenges:( 
+      <>
+        In this project the brief became more and more complex as the project progressed 
+        and new user stories were added. This forced me to consider the scalability of the code I was writing and dependencies 
+        between each component. It was hard work constantly refactoring and rethinking the 
+        structure as the brief changed, but ultimately a valuable learning experience in that
+        it replicated the unpredictability of working on a real project.
+        <br/>
+        I spent a lot of time learning about advanced Jest testing in order to test specific 
+        parts of my code in isolation.
+      </>
+    ),
+    review: (
+      <> 
+        Given more time I would improve the responsiveness of the UI, which currently
+        includes a horizontal scroll bar which does not create the best user experience.
+        This animated section which visualises the ship's journey would be more effective 
+        with the ship displayed in a fixed position while the ports move behind it.
+      </>
+    ),
   },
 ];
 
