@@ -15,6 +15,7 @@ import musicLibGetGif from "./images/music-library/music-lib-GET.gif";
 import cruiseShipsGif from "./images/cruise-ships/cruise-ships-play.gif";
 
 const projects = [
+  // Surreal Estate
   {
     ref: "SurrealEstate",
     header: "Surreal Estate",
@@ -74,6 +75,7 @@ const projects = [
       </>
     ),
   },
+  // Weather App
   {
     ref: "Weather",
     header: "Umbrella Weather",
@@ -127,6 +129,7 @@ const projects = [
       </>
     ),
   },
+  // NASA Search
   {
     ref: "NASA",
     header: "Nasa Image Search",
@@ -141,10 +144,10 @@ const projects = [
     },
     brief: (
       <>
-        Technical test: 10hrs. Build a React web application
-        that allows users to search for images based on a query relating to
-        space. You are provided the NASA API endpoint for image search. The
-        following functionalities should be implemented:
+        Technical test: 10hrs. Build a React web application that allows users
+        to search for images based on a query relating to space. You are
+        provided the NASA API endpoint for image search. The following
+        functionalities should be implemented:
         <li>
           A search page which allows users to search for images by keyword
         </li>
@@ -153,25 +156,25 @@ const projects = [
     ),
     tech: <>React Hooks, Jest, PropTypes, Axios, CSS</>,
     justification: (
-      <>
-        I used React to enable the search results to be stored in state.
-      </>
+      <>I used React to enable the search results to be stored in state.</>
     ),
     challenges: (
       <>
-        This was my first project completed under timed conditions so it was important to
-        prioritise the functionality of the app over styling.
+        This was my first project completed under timed conditions so it was
+        important to prioritise the functionality of the app over styling.
       </>
     ),
     review: (
       <>
-        Given more time I would add ability to search and display videos as well as images.
-        I would add radio checkboxes to select content type when searching.
-        <br/>
-        I would also improve the image gallery layout to minimise white space in between images.
+        Given more time I would add ability to search and display videos as well
+        as images. I would add radio checkboxes to select content type when
+        searching.
+        <br />I would also improve the image gallery layout to minimise white
+        space in between images.
       </>
     ),
   },
+  // Music Library
   {
     ref: "MusicLib",
     header: "Music Library API",
@@ -181,8 +184,8 @@ const projects = [
       gif1: musicLibGetGif,
     },
     links: {
-      liveSite: "",
-      gitRepo: "",
+      liveSite: "https://music-library-api-demo.herokuapp.com",
+      gitRepo: "https://github.com/samtovey13/music-library-api",
     },
     brief: <></>,
     tech: <></>,
@@ -190,6 +193,7 @@ const projects = [
     challenges: <></>,
     review: <></>,
   },
+  // Book Library
   {
     ref: "BookLib",
     header: "Book Library API",
@@ -207,6 +211,7 @@ const projects = [
     challenges: <></>,
     review: <></>,
   },
+  // Cruise Ships
   {
     ref: "CruiseShips",
     header: "Cruise Ships",
