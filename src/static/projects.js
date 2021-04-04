@@ -88,7 +88,8 @@ const projects = [
     },
     brief: (
       <>
-        Build a weather app that receives live weather data. Users should be able to:
+        Build a weather app that receives live weather data. Users should be
+        able to:
         <li>Select a location</li>
         <li>See a summary of each of the weather for a 5-day forecast</li>
         <li>Click on one of the summaries to view full forecast details.</li>
@@ -96,32 +97,33 @@ const projects = [
     ),
     tech: <>React Hooks, Jest, PropTypes, Axios, CSS</>,
     justification: (
-      <> 
-        The app was built as a Single Page Application with React. Using React keeps the app light
-        and fast, as forecast data can be updated without reloading the whole page. It also meant that
-        components such as the forecast summary cards could be reused.
+      <>
+        The app was built as a Single Page Application with React. Using React
+        keeps the app light and fast, as forecast data can be updated without
+        reloading the whole page. It also meant that components such as the
+        forecast summary cards could be reused.
       </>
     ),
     challenges: (
       <>
         All parts of the forecast and location display rely on data from the API
-        call made automatically when the app is first opened. This initially resulted in a very juddery loading
-        experience as each component spluttered into view.
-        To smooth the visual transition I implemented conditional rendering so that a 
-        'loading' graphic was displayed while the API request was in progress, and the
-        whole app rendered as one when the data was ready to display.
-        This gave a more professional, polished feel.
+        call made automatically when the app is first opened. This initially
+        resulted in a very juddery loading experience as each component
+        spluttered into view. To smooth the visual transition I implemented
+        conditional rendering so that a 'loading' graphic was displayed while
+        the API request was in progress, and the whole app rendered as one when
+        the data was ready to display. This gave a more professional, polished
+        feel.
       </>
     ),
     review: (
       <>
-        The app currently receives quite limited data from a slimmed-down version
-        of the Open Weather Map API - eg it can only search for cities within the UK. I would
-        like to connect it directly to the Open Weather Map instead in order to receive
-        a wider range of data.
-        <br/>
-        I also want to build an autocorrecting search bar to make it easier for users to find
-        a location.
+        The app currently receives quite limited data from a slimmed-down
+        version of the Open Weather Map API - eg it can only search for cities
+        within the UK. I would like to connect it directly to the Open Weather
+        Map instead in order to receive a wider range of data.
+        <br />I also want to build an autocorrecting search bar to make it
+        easier for users to find a location.
       </>
     ),
   },
@@ -134,14 +136,41 @@ const projects = [
       gif1: NASASearchGif,
     },
     links: {
-      liveSite: "",
-      gitRepo: "",
+      liveSite: "https://samtovey13.github.io/NASA-image-search",
+      gitRepo: "https://github.com/samtovey13/NASA-image-search",
     },
-    brief: <></>,
-    tech: <></>,
-    justification: <></>,
-    challenges: <></>,
-    review: <></>,
+    brief: (
+      <>
+        Technical test: 10hrs. Build a React web application
+        that allows users to search for images based on a query relating to
+        space. You are provided the NASA API endpoint for image search. The
+        following functionalities should be implemented:
+        <li>
+          A search page which allows users to search for images by keyword
+        </li>
+        <li>Images must be returned upon a successful search</li>
+      </>
+    ),
+    tech: <>React Hooks, Jest, PropTypes, Axios, CSS</>,
+    justification: (
+      <>
+        I used React to enable the search results to be stored in state.
+      </>
+    ),
+    challenges: (
+      <>
+        This was my first project completed under timed conditions so it was important to
+        prioritise the functionality of the app over styling.
+      </>
+    ),
+    review: (
+      <>
+        Given more time I would add ability to search and display videos as well as images.
+        I would add radio checkboxes to select content type when searching.
+        <br/>
+        I would also improve the image gallery layout to minimise white space in between images.
+      </>
+    ),
   },
   {
     ref: "MusicLib",
