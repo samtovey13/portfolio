@@ -40,10 +40,32 @@ const StyledModal = styled.div`
       width: 100%;
     }
 
+    .modal-header {
+      position: absolute;
+      top: 0;
+      background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0),
+        rgba(255, 255, 255, 1)
+      );
+      border-radius: 8px;
+    }
+    .modal-footer {
+      position: absolute;
+      bottom: 0;
+      height: 120px;
+      background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(255, 255, 255, 1)
+      );
+      border-radius: 8px;
+    }
+
     .x-button {
       border: 2px solid lightgrey;
       border-radius: 8px;
-      background-color: inherit;
+      background-color: white;
       display: block;
       float: right;
       margin: 5px;
@@ -54,7 +76,7 @@ const StyledModal = styled.div`
     }
     .hide-button {
       display: block;
-      margin: 16px auto;
+      margin: 50px auto 100px auto;
     }
   }
 `;

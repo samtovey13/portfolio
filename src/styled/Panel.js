@@ -50,6 +50,7 @@ const StyledModalPanel = styled(StyledPanel)`
 
   h1 {
     margin: 0;
+    padding-top: 40px;
   }
   h2 {
     margin: 40px 0 10px 0;
