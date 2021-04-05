@@ -73,7 +73,7 @@ const Skills = () => {
             As a career-switcher I bring a lot more to coding than simply
             technical skills:
           </p>
-          <StyledList>
+          <StyledList columns>
             <li>
               <span>Customer service pro. </span> I understand the importance of
               looking after the client and working to a brief.

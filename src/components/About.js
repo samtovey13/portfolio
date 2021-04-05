@@ -47,7 +47,7 @@ const About = () => {
       <StyledPanel>
         <div className="panel-inner">
           <h2>Things I enjoy:</h2>
-          <StyledList>
+          <StyledList columns>
             <li>
               <span>Efficiency. </span>I get huge satisfaction from streamlining
               and simplifying procedures, helping others to achieve more with
