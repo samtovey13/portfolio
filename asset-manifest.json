@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.b7fc384f.chunk.css",
-    "main.js": "/static/js/main.b0c0d57b.chunk.js",
-    "main.js.map": "/static/js/main.b0c0d57b.chunk.js.map",
+    "main.js": "/static/js/main.c0329c22.chunk.js",
+    "main.js.map": "/static/js/main.c0329c22.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d0605945.js",
     "runtime-main.js.map": "/static/js/runtime-main.d0605945.js.map",
-    "static/js/2.93b3ffbe.chunk.js": "/static/js/2.93b3ffbe.chunk.js",
-    "static/js/2.93b3ffbe.chunk.js.map": "/static/js/2.93b3ffbe.chunk.js.map",
+    "static/js/2.3a278e3d.chunk.js": "/static/js/2.3a278e3d.chunk.js",
+    "static/js/2.3a278e3d.chunk.js.map": "/static/js/2.3a278e3d.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.b7fc384f.chunk.css.map": "/static/css/main.b7fc384f.chunk.css.map",
-    "static/js/2.93b3ffbe.chunk.js.LICENSE.txt": "/static/js/2.93b3ffbe.chunk.js.LICENSE.txt",
+    "static/js/2.3a278e3d.chunk.js.LICENSE.txt": "/static/js/2.3a278e3d.chunk.js.LICENSE.txt",
     "static/media/NASA-search.a8a1704a.gif": "/static/media/NASA-search.a8a1704a.gif",
+    "static/media/avatar.0a8f2720.svg": "/static/media/avatar.0a8f2720.svg",
     "static/media/cruise-ships-play.5fc06561.gif": "/static/media/cruise-ships-play.5fc06561.gif",
-    "static/media/headshot.bab89bd6.jpeg": "/static/media/headshot.bab89bd6.jpeg",
     "static/media/music-lib-GET.f3fe2b2e.gif": "/static/media/music-lib-GET.f3fe2b2e.gif",
     "static/media/property-favourites.a7639f7c.gif": "/static/media/property-favourites.a7639f7c.gif",
     "static/media/property-search.0f3e94a9.gif": "/static/media/property-search.0f3e94a9.gif",
@@ -26,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d0605945.js",
-    "static/js/2.93b3ffbe.chunk.js",
+    "static/js/2.3a278e3d.chunk.js",
     "static/css/main.b7fc384f.chunk.css",
-    "static/js/main.b0c0d57b.chunk.js"
+    "static/js/main.c0329c22.chunk.js"
   ]
 }
