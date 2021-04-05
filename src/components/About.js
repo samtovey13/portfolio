@@ -3,7 +3,7 @@ import StyledAnchor from "../styled/Anchor";
 import { StyledList } from '../styled/List';
 import {StyledPanel} from "../styled/Panel";
 import { FiArrowDown } from "react-icons/fi";
-import headshot from "../static/images/headshot.jpeg";
+import headshot from "../static/images/avatar.svg";
 import styled from 'styled-components';
 
 const StyledHeadshot = styled.img`
