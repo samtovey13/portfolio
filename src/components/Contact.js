@@ -50,45 +50,50 @@ const Contact = () => {
           {fail && <p className="fail-message">Error! Message not sent.</p>}
         </div>
         <StyledContactForm name="contact-form" onSubmit={handleSubmit}>
-          <label htmlFor="name">Name</label>
-          <input
-            required
-            type="text"
-            name="name"
-            value={fields.name}
-            onChange={handleChange}
-          ></input>
+          <label htmlFor="name">
+            Name
+            <input
+              required
+              type="text"
+              name="name"
+              value={fields.name}
+              onChange={handleChange}
+            ></input>
+          </label>
 
-          <label htmlFor="email">Email</label>
-          <input
-            required
-            type="email"
-            name="email"
-            value={fields.email}
-            onChange={handleChange}
-          ></input>
+          <label htmlFor="email">
+            Email
+            <input
+              required
+              type="email"
+              name="email"
+              value={fields.email}
+              onChange={handleChange}
+            ></input>
+          </label>
 
-          <label htmlFor="message">Message</label>
-          <textarea
-            required
-            name="message"
-            width="100%"
-            rows="10"
-            value={fields.message}
-            onChange={handleChange}
-          ></textarea>
+          <label htmlFor="message">
+            Message
+            <textarea
+              required
+              name="message"
+              width="100%"
+              rows="10"
+              value={fields.message}
+              onChange={handleChange}
+            ></textarea>
+          </label>
 
           <div className="contact-buttons">
-              <StyledButton type="submit" className="contact-submit-button">
-                Send
-                <FaTelegramPlane />
-              </StyledButton>
-              <StyledAnchor href="#navbar" className="jump-to-top-anchor">
-                Back to top
-                <FaArrowUp />
-              </StyledAnchor>
+            <StyledButton type="submit" className="contact-submit-button">
+              Send
+              <FaTelegramPlane />
+            </StyledButton>
+            <StyledAnchor href="#navbar" className="jump-to-top-anchor">
+              Back to top
+              <FaArrowUp />
+            </StyledAnchor>
           </div>
-
         </StyledContactForm>
       </div>
     </StyledPanel>

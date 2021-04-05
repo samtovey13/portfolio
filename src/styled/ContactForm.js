@@ -15,14 +15,24 @@ const StyledContactForm = styled.form`
 
   label {
     margin: 0;
-    padding: 5px 0;
+    padding: 10px 0;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  input {
+    min-width: 70%;
+    max-width: 100%;
   }
 
   input,
   textarea {
-    margin-bottom: 20px;
-    padding: 4px;
-    border-radius: 0;
+    display: block;
+    margin: 10px 0 20px 0;
+    padding: 8px;
+    border-radius: 5px;
     &:focus {
       outline-color: #dd6e42;
     }
