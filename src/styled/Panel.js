@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 
 const StyledPanel = styled.div`
   width: 100%;
@@ -35,6 +35,19 @@ const StyledPanel = styled.div`
     color: ${(props) => props.col};
     margin: 0;
     padding: 40px;
+
+    @media (min-width: 768px) {
+      ${(props) =>
+        props.columns &&
+        css`
+          display: flex;
+          flex-flow: row-reverse;
+          align-items: center;
+          .content-wrapper {
+            padding-right: 40px;
+          }
+        `};
+    }
   }
 
   .first-p {

@@ -16,24 +16,32 @@ const StyledHeadshot = styled.img`
 const About = () => {
   return (
     <>
-      <StyledPanel className="about" bg="#DD6E42" col="#FFFFFF">
+      <StyledPanel className="about" columns bg="#DD6E42" col="#FFFFFF">
         <div className="panel-inner">
-          <StyledHeadshot className="headshot-img" src={headshot} alt="headshot" height="250px" />
-          <h2>My Story</h2>
-          <p className="first-p">
-            Hello. I'm Sam and I'm a Web Developer based in Edinburgh, UK.
-          </p>
-          <p>
-            In 2020 I decided to turn my hobby into a career and enrolled on a
-            part time bootcamp with Manchester Codes. In the past year I've
-            packed a lot of learning into my evenings and weekends, and I am now
-            seeking a junior role in a supportive company where I can continue
-            learning from some of the best professionals in the industry.
-          </p>
-          <StyledAnchor href="#projects">
-            Skip to Projects
-            <FiArrowDown />
-          </StyledAnchor>
+          <StyledHeadshot
+            className="headshot-img"
+            src={headshot}
+            alt="headshot"
+            height="250px"
+          />
+          <div className="content-wrapper">
+            <h2>My Story</h2>
+            <p className="first-p">
+              Hello. I'm Sam and I'm a Web Developer based in Edinburgh, UK.
+            </p>
+            <p>
+              In 2020 I decided to turn my hobby into a career and enrolled on a
+              part time bootcamp with Manchester Codes. In the past year I've
+              packed a lot of learning into my evenings and weekends, and I am
+              now seeking a junior role in a supportive company where I can
+              continue learning from some of the best professionals in the
+              industry.
+            </p>
+            <StyledAnchor href="#projects">
+              Skip to Projects
+              <FiArrowDown />
+            </StyledAnchor>
+          </div>
         </div>
       </StyledPanel>
       <StyledPanel>
