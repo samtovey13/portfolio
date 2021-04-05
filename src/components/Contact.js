@@ -3,6 +3,8 @@ import StyledContactForm from '../styled/ContactForm';
 import {StyledPanel} from '../styled/Panel';
 import emailjs from 'emailjs-com';
 import StyledButton from "../styled/Button";
+import StyledAnchor from "../styled/Anchor";
+import {FaArrowUp, FaTelegramPlane} from 'react-icons/fa';
 
 const Contact = () => {
   
@@ -76,9 +78,17 @@ const Contact = () => {
             onChange={handleChange}
           ></textarea>
 
-          <StyledButton type="submit" className="contact-submit-button">
-            Send
-          </StyledButton>
+          <div className="contact-buttons">
+              <StyledButton type="submit" className="contact-submit-button">
+                Send
+                <FaTelegramPlane />
+              </StyledButton>
+              <StyledAnchor href="#navbar" className="jump-to-top-anchor">
+                Back to top
+                <FaArrowUp />
+              </StyledAnchor>
+          </div>
+
         </StyledContactForm>
       </div>
     </StyledPanel>

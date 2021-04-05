@@ -24,13 +24,33 @@ const StyledContactForm = styled.form`
     padding: 4px;
     border-radius: 0;
     &:focus {
-      outline-color: #DD6E42;
+      outline-color: #dd6e42;
     }
   }
 
-  .contact-submit-button {
-    align-self: center;
-    margin-top: 20px;
+  .contact-buttons {
+    margin-top: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+  }
+
+  .contact-submit-button,
+  .jump-to-top-anchor {
+    margin: 10px;
+    padding: 10px;
+    box-shadow: none;
+    flex: 1 0 200px;
+  }
+
+  .jump-to-top-anchor {
+    color: #dd6e42;
+    background-color: white;
+    border-color: #dd6e42;
+
+    &:hover {
+      background-color: #eaeaea;
+    }
   }
 `;
 

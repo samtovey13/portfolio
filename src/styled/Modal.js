@@ -38,6 +38,7 @@ const StyledModal = styled.div`
     .modal-header,
     .modal-footer {
       width: 100%;
+      z-index: 100;
     }
 
     .modal-header {

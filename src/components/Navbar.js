@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const Navbar = () => {
   return (
-    <StyledNavbar className="navbar">
+    <StyledNavbar className="navbar" id="navbar">
       <StyledH1>Sam Tovey, Developer</StyledH1>
       <div className="socials-links">
         <a href="https://github.com/samtovey13">

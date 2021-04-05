@@ -10,15 +10,22 @@ const StyledButton = styled.button`
   font-size: 20px;
   font-weight: 700;
   color: white;
-  background-color: grey;
+  background-color: #dd6e42;
   border-radius: 30px;
   border: 2px solid white;
   text-decoration: none;
   box-shadow: 2px 3px 5px 6px #ccc;
   text-align: center;
+  font-family: "Khula", sans-serif;
+
+  svg {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+  }
 
   &:hover {
-    background-color: #dd6e42;
+    background-color: grey;
     cursor: pointer;
   }
 `;

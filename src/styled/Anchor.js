@@ -17,9 +17,13 @@ const StyledAnchor = styled.a`
   text-align: center;
 
   svg {
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+  }
+
+  &:hover {
+    background-color: grey;
   }
 `;
 
