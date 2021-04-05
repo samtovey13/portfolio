@@ -25,10 +25,6 @@ const StyledNavbar = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column-reverse;
-    .socials-links a svg {
-      height: 22px;
-      width: 22px;
-    }
 
     h1 {
       font-size: 34px;
