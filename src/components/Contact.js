@@ -40,7 +40,7 @@ const Contact = () => {
   }
 
   return (
-    <StyledPanel className="contact" bg="#E8DAB2">
+    <StyledPanel className="contact" bg="#ffe66d">
       <div className="panel-inner">
         <h2>Contact</h2>
         <div className="alert">

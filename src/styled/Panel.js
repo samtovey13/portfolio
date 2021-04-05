@@ -4,6 +4,10 @@ const StyledPanel = styled.div`
   width: 100%;
   padding: 60px 0;
   background-color: ${(props) => props.bg};
+  background-image: ${(props) =>
+    props.bgImg ? `url(${props.bgImg})` : "none"};
+  background-repeat: no-repeat;
+  background-size: cover;
   display: grid;
   grid-template-columns: 1fr minmax(150px, 900px) 1fr;
   height: calc(100% - 180px);
@@ -13,8 +17,20 @@ const StyledPanel = styled.div`
   &::-webkit-scrollbar {
     display: none;
   }
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: ${(props) =>
+      props.bgImg ? `rgba(255, 238, 147, 0.9)` : "none"};
+  }
 
   .panel-inner {
+    z-index: 10;
     grid-column: 2;
     color: ${(props) => props.col};
     margin: 0;

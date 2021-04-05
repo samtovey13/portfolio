@@ -22,7 +22,7 @@ const SkillsWrapper = styled.div`
 const Skills = () => {
   return (
     <>
-      <StyledPanel className="skills" bg="#E8DAB2">
+      <StyledPanel className="skills" bg="#ffe66d">
         <div className="panel-inner">
           <h2>Skills</h2>
           <SkillsWrapper>
@@ -69,7 +69,7 @@ const Skills = () => {
       </StyledPanel>
       <StyledPanel>
         <div className="panel-inner">
-          <p>
+          <p className="first-p">
             As a career-switcher I bring a lot more to coding than simply
             technical skills:
           </p>
@@ -84,8 +84,8 @@ const Skills = () => {
               efficiency.
             </li>
             <li>
-              <span>Background in the visual arts. </span> I can spot a
-              well-styled website a mile off.
+              <span>Background in the visual arts. </span> I love colour and 
+              clean design.
             </li>
           </StyledList>
         </div>

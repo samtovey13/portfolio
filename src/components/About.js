@@ -3,15 +3,26 @@ import StyledAnchor from "../styled/Anchor";
 import { StyledList } from '../styled/List';
 import {StyledPanel} from "../styled/Panel";
 import { FiArrowDown } from "react-icons/fi";
+import headshot from "../static/images/headshot.jpeg";
+import styled from 'styled-components';
 
+const StyledHeadshot = styled.img`
+  max-width: 100%;
+  border-radius: 50%;
+  display: block;
+  margin: 10px auto 60px auto;
+`;
 
 const About = () => {
   return (
     <>
       <StyledPanel className="about" bg="#DD6E42" col="#FFFFFF">
         <div className="panel-inner">
+          <StyledHeadshot className="headshot-img" src={headshot} alt="headshot" height="250px" />
           <h2>My Story</h2>
-          <p className="first-p">Hello. I'm Sam and I'm a Web Developer based in Edinburgh, UK.</p>
+          <p className="first-p">
+            Hello. I'm Sam and I'm a Web Developer based in Edinburgh, UK.
+          </p>
           <p>
             In 2020 I decided to turn my hobby into a career and enrolled on a
             part time bootcamp with Manchester Codes. In the past year I've
@@ -19,8 +30,9 @@ const About = () => {
             seeking a junior role in a supportive company where I can continue
             learning from some of the best professionals in the industry.
           </p>
-          <StyledAnchor href="#projects">Skip to Projects
-          <FiArrowDown />
+          <StyledAnchor href="#projects">
+            Skip to Projects
+            <FiArrowDown />
           </StyledAnchor>
         </div>
       </StyledPanel>
