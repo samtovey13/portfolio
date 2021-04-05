@@ -9,13 +9,13 @@ const Navbar = () => {
     <StyledNavbar className="navbar" id="navbar">
       <StyledH1>Sam Tovey, Developer</StyledH1>
       <div className="socials-links">
-        <a href="https://github.com/samtovey13">
+        <a href="https://github.com/samtovey13" aria-label="Github portfolio">
           <FaGithub />
         </a>
-        <a href="https://twitter.com/SamTovey13">
+        <a href="https://twitter.com/SamTovey13" aria-label="Twitter profile">
           <FaTwitter />
         </a>
-        <a href="https://www.linkedin.com/in/sam-tovey/">
+        <a href="https://www.linkedin.com/in/sam-tovey/" aria-label="LinkedIn profile">
           <FaLinkedin />
         </a>
       </div>
