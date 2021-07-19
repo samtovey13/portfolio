@@ -63,6 +63,10 @@ const StyledModal = styled.div`
       border-radius: 8px;
     }
 
+    .button-anchor {
+      text-decoration: none;
+    }
+
     .x-button {
       border: 2px solid lightgrey;
       border-radius: 8px;
