@@ -41,22 +41,25 @@ const Modal = ({ props, hideModal, isOpen }) => {
 
                 <div className="project-direct-links">
                   {props.links.liveSite ? (
-                    <StyledButton
-                      className="live-site-button"
-                      href={props.links.liveSite}
-                    >
-                      <GiMouse />
-                      Live Site
-                    </StyledButton>
+                    <a className="button-anchor" href={props.links.liveSite}>
+                      <StyledButton
+                        className="live-site-button"
+                      >
+                        <GiMouse />
+                        Live Site
+                      </StyledButton>
+                    </a>
                   ) : null}
                   {props.links.gitRepo ? (
-                    <StyledButton
-                      className="git-repo-button"
-                      href={props.links.gitRepo}
-                    >
-                      <FaGithub />
-                      Git Repo
-                    </StyledButton>
+                    <a className="button-anchor" href={props.links.liveSite}>
+                      <StyledButton
+                        className="git-repo-button"
+                        href={props.links.gitRepo}
+                      >
+                        <FaGithub />
+                        Git Repo
+                      </StyledButton>
+                    </a>
                   ) : null}
                 </div>
 
