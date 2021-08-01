@@ -51,10 +51,9 @@ const Modal = ({ props, hideModal, isOpen }) => {
                     </a>
                   ) : null}
                   {props.links.gitRepo ? (
-                    <a className="button-anchor" href={props.links.liveSite}>
+                    <a className="button-anchor" href={props.links.gitRepo}>
                       <StyledButton
                         className="git-repo-button"
-                        href={props.links.gitRepo}
                       >
                         <FaGithub />
                         Git Repo
